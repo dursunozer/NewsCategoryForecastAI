@@ -1,0 +1,13 @@
+              precision    recall  f1-score   support
+
+     Ekonomi       1.00      0.97      0.99       120
+     Magazin       0.98      1.00      0.99       120
+      Sağlık       0.98      0.99      0.98       120
+     Siyaset       1.00      0.98      0.99       120
+        Spor       0.99      1.00      1.00       120
+   Teknoloji       0.98      0.99      0.98       120
+       Yaşam       0.99      0.97      0.98       120
+
+    accuracy                           0.99       840
+   macro avg       0.99      0.99      0.99       840
+weighted avg       0.99      0.99      0.99       840
