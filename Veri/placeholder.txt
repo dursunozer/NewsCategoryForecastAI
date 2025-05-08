@@ -1,0 +1,2 @@
+Bu dosya, veri klasörünün Hugging Face'e yüklenmesi için bir yer tutucudur.
+Lütfen bu klasöre TurkishHeadlines.csv veri setini yükleyin. 
