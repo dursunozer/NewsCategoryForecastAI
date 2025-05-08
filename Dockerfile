@@ -6,6 +6,9 @@ WORKDIR /app
 COPY requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
 
+# NLTK veri paketlerini yükle
+RUN python -m nltk.downloader punkt stopwords
+
 # Geri kalan tüm dosyaları kopyala
 COPY . /app/
 

@@ -20,11 +20,18 @@ try:
     nltk.data.find('tokenizers/punkt')
     nltk.data.find('corpora/stopwords')
 except LookupError:
+    print("NLTK veri paketleri indiriliyor...")
     nltk.download('punkt')
     nltk.download('stopwords')
+    print("İndirme tamamlandı.")
 
 # Türkçe stopwords
-tr_stop_words = set(stopwords.words('turkish'))
+try:
+    tr_stop_words = set(stopwords.words('turkish'))
+except LookupError:
+    print("Türkçe stopwords indiriliyor...")
+    nltk.download('stopwords')
+    tr_stop_words = set(stopwords.words('turkish'))
 
 # Sayfa başlığı
 st.set_page_config(page_title="Haber Kategori Tahmini", page_icon="📰", layout="wide")
