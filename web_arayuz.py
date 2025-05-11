@@ -70,7 +70,7 @@ def metin_temizle(text):
         return text
     return ""
 
-# Durak kelimeleri kaldırma
+# Durak kelimeleri kaldırır
 def durak_kelimeleri_kaldir(text):
     """Türkçe durak kelimelerini metinden çıkarır ve temiz metin döndürür"""
     if isinstance(text, str):
@@ -79,7 +79,7 @@ def durak_kelimeleri_kaldir(text):
         return ' '.join(filtered_tokens)
     return ""
 
-# BERT için metin temizleme
+# BERT için metin temizler
 def bert_metin_temizle(text):
     """BERT için metni temizler: özel karakterleri düzenler ve gereksiz boşlukları kaldırır"""
     if isinstance(text, str):
